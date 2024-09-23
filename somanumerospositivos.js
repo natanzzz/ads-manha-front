@@ -5,14 +5,12 @@
 // Utilize while para o loop e if para verificar se o número é positivo ou negativo.
 
 const prompt = require("prompt-sync")();
+let soma = 0; 
+let numero = parseInt(prompt("Coloque o valor positiv: "));
 
-var soma = 0
+while(numero>= 0){//usei >= para quando for usado = 1+0=1
+    soma+= numero;
 
-var numero = Number(prompt("Digite um número: "))
-
-while(numero > 0) {
-    soma = numero + soma
-    var numero = Number(prompt("Digite um número: "))
+    numero = parseInt(prompt("insira outro valor positivo: "));
 }
-
-console.log("A soma dos números positivos digitados é igual a: ", soma)
+console.log("numero negativo não pode, esse é o resultado: "+soma)
